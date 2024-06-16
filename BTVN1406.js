@@ -12,20 +12,16 @@ class ajaxDemo {
 
         this.product = null;
         this.fetched = false;
-        this.numProduct = 0;
-        this._id = 0;
-
     }
 
     async getProduct() {
         if (this.fetched) return 0;
         this.product = await fetch("https://dummyapi-0uzr.onrender.com/products");
-        this.product = await this.product.json();
-        console.log(this.product);
-        this.product = await this.product.products;
+        this.product = await this.product_list.json();
+        console.log(this.product_list);
+        this.product = await this.product.product_list;
         this.displayResult.textContent = "Got product";
         this.fetched = true;
-        this.numProduct = this.length;
         return 1;
     }
 
@@ -34,8 +30,6 @@ class ajaxDemo {
         this.fetched = false;
         this.displayResult.textContent = "Cleared products";
         this.displayProductText.innerHTML = "";
-        this._id = 0;
-        this.numProduct = 0;
     }
 
     displayProduct() {
@@ -44,25 +38,10 @@ class ajaxDemo {
             return;
         }
         const formatPrice = (price, delimiter=".") => {return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, delimiter)}
-        const truncatePrice = (price, k = 2) => {const factor = Math.pow(10, Math.abs(price).toString().length - k); return Math.floor(price / factor) * factor; }
-        
-        // Dummy action for fetching product from database
-        function getProduct() {
-          return test_product;
-        }
-        
-        
-        /**
-         * Giải thích 1 số chỗ khó hiểu:
-         * production-image: data là base64 cho nên chỉ cần thêm data sau data:image/png;base64, là được
-         * production-sale: chỗ để display tag của sản phẩm, nếu có giảm giá thì ưu tiên hiển thị giảm giá, không có tag hay giảm giá thì để trống (cái này tự quy ước)
-         * production-old-price: nếu có giảm giá thì thể hiện giá cũ, lẽ ra api phải trả về nhưng mà api không có nên tự tính 🐧
-         * 
-         * Bỏ cái phần element vô () để xuống dòng thoải mái
-         */
+        const truncatePrice = (price, k = 2) => {const factor = Math.pow(10, Math.abs(price).toString().length - k); return Math.floor(price / factor) * factor; }~
         function createProductComponent(product) {
           return (
-            `<div class="production-container">
+           this.displayProductText.textContent = `<div class="production-container">
             <img class="production-image" src="data:image/png;base64,${this.product.image}" alt="${this.product.name}">
             <span class="production-sale"><p>${this.product.discount ? `-${this.product.discount}%` : `${this.product.tag}`}</p></span>
             
@@ -80,9 +59,6 @@ class ajaxDemo {
           )
         }
         
-        /**
-         * Dùng insertAdjacentHTML để khỏi tạo node mới rồi re-render từ đầu, chỉ render node mới thêm vô
-         */
         function populateProduct() {
           const container = document.querySelector(".production-list");
         } 
