@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniro - Shop</title>
+    <link rel="icon" href="furniro-logo.png">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet" href="Head-Footer.css">
+<link rel="stylesheet" href="Shop.css">
+<script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <div id="page-logo">
+            <a href="index.html" id="brand-logo">
+                <img id="brand-image" src="furniro-logo.png" alt="Furniro icon">
+                <h1 class="font-montserrat font-bold text-[34px] leading-10">Furniro</h1>
+            </a>
+        </div>
+        <nav id="page-nav">
+            <ul id="page-nav-list">
+                <li> <a href="index.html" id="home-link" class="top-page-link">Home</a> </li>
+                <li> <a href="Shop.html" id="shop-link" class="top-page-link">Shop</a> </li>
+                <li> <a href="blog.html" id="about-link" class="top-page-link">About</a> </li>
+                <li> <a href="Contact.html" id="contact-link" class="top-page-link">Contact</a> </li>
+            </ul>
+        </nav>
+        <nav id="support-nav">
+            <ul id="support-nav-list">
+                <li><a href=""><span class="material-symbols-outlined"><img src="Alert.png" alt="person_alert"></span></a></li>
+                <li><a href=""><span class="material-symbols-outlined"><img src="Search.png" alt="Search_icon"></span></a></li>
+                <li><a href=""><span class="material-symbols-outlined"><img src="heart.png" alt="favorite_icon"></span></a></li>
+                <li><a href="cart.html"><span class="material-symbols-outlined"><img src="Cart.png" alt="shopping_cart"></span></a></li>        
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Section-1">
+            <div id="Shop-box">
+                <div id="Shop-box-logo-container">
+                    <img id="Furniro-logo-contact" src="furniro-logo.png" alt="logo">
+                </div>
+                <h2 id="Shop-heading">SHOP</h2>
+                <p id="Shop-nav"><b>Home > </b>&nbsp; Shop</p>
+            </div>
+        </section>
+
+        <section id="control-panel">
+            <div class="control-panel-container">
+                <div class="cp-buttons">
+                    <ul class="cp-buttons__list">
+                        <li class="cp-buttons__item">
+                        <button class="cp-buttons__button" type="button">
+                            <img src="Filter.png" alt="">
+                            Filter
+                        </button>
+                        </li>
+                        <li class="cp-buttons__item">
+                        <img src="ci_grid-big-round.png" alt="">
+                        </li>
+                        <li class="cp-buttons__item">
+                            <img src="bi_view-list.png" alt="">
+                        </li>
+                    </ul>
+              
+                    <p class="cp-buttons__info">Showing 1–16 of 32 results</p>
+                </div>
+              
+                <div class="cp-selectors">
+                    <div class="cp-show">
+                      <label for="cp-show__label">Show:</label>
+                      <select input="cp-show__input" id="cp-show__item" placeholder="16" readonly>
+                        <option value="8">8</option>
+                        <option value="16">16</option>
+                        <option value="32">24</option>
+                      </select>
+                    </div>
+              
+                    <div class="cp-sort">
+                        <label for="cp-sort__label">Sort by</label>
+                      <select input="cp-sort__input" id="cp-sort__item" placeholder="Default" readonly>
+                        <option class="cp-sort__item" value="Default">Default</option>
+                        <option class="cp-sort__item" value="Price: low to high">Price: low to high</option>
+                        <option class="cp-sort__item" value="Price: high to low">Price: high to low</option>
+                      </select>
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+        <section id="Section-2">
+
+            <div class="row">
+                <div class="product-container" id="syltherine">
+                    <div class="hidden-info">
+                        <button id="add-to-cart-button">
+                            Add to cart
+                        </button>
+                        <p class="action-share">
+                            <span class="material-symbols-outlined icon-filled"><img src="share.png" alt=""></span>
+                               Share 
+                        </p>
+                        <p class="action-compare">
+                            <span class="material-symbols-outlined"><img src="compare.png" alt=""></span>
+                            Compare
+                        </p>
+                        <div class="action-like">
+                            <span class="material-symbols-outlined"></span>
+                            Like
+                            <div class="heart"></div>
+                            <div class="animation-heart"></div>
+                            <script src="main.js"></script>
+                            <link rel="stylesheet" href="style.css">
+                        </div>
+                    </div>
+                    
+                    <img class="product-image" src="syltherine.png" alt="syltherine">
+                    <span class="sale" id="discount">
+                        <p>-30%</p>
+                    </span>
+
+                        <h3 class="product-name">syltherine</h3>
+                        <p class="product-desc">Stylish cafe chair</p>
+                        <h4 class="product-price">Rp 2.500.000</h4>
+                        <p class="product-old-price"><del>Rp 3.500.000</del></p>
+                </div>
+                
+                <div class="product-container" id="leviosa">
+                    <div class="hidden-info">
+                        <button id="add-to-cart-button">
+                            Add to cart
+                        </button>
+                        <p class="action-share">
+                            <span class="material-symbols-outlined icon-filled"><img src="share.png" alt=""></span>
+                                Share 
+                        </p>
+                        <p class="action-compare">
+                            <span class="material-symbols-outlined"><img src="compare.png" alt=""></span>
+                            Compare
+                        </p>
+                        <div class="action-like">
+                            <span class="material-symbols-outlined"></span>
+                            Like
+                            <div class="heart"></div>
+                            <div class="animation-heart"></div>
+                            <script src="main.js"></script>
+                            <link rel="stylesheet" href="style.css">
+                        </div>
+                    </div>
+
+                    <img class="product-image" src="leviosa.png" alt="leviosa">
+                    <span class="sale">
+                        <p></p>
+                    </span>
+
+                    <h3 class="product-name">Leviosa</h3>
+                    <p class="product-desc">Stylish cafe chair</p>
+                    <h4 class="product-price">Rp 2.500.000</h4>
+                    <p class="product-old-price"><del></del></p>
+                </div>
+
+                <div class="product-container" id="lolito">
+                    <div class="hidden-info">
+                        <button id="add-to-cart-button">
+                            Add to cart
+                        </button>
+                        <p class="action-share">
+                            <span class="material-symbols-outlined icon-filled"><img src="share.png" alt=""></span>
+                            Share 
+                        </p>
+                        <p class="action-compare">
+                            <span class="material-symbols-outlined"><img src="compare.png" alt=""></span>
+                            Compare
+                        </p>
+                        <div class="action-like">
+                            <span class="material-symbols-outlined"></span>
+                            Like
+                            <div class="heart"></div>
+                            <div class="animation-heart"></div>
+                            <script src="main.js"></script>
+                            <link rel="stylesheet" href="style.css">
+                        </div>
+                    </div>
+
+                    <img class="product-image" src="lolito.png" alt="lolito">
+                    <span class="sale" id="discount">
+                        <p>-50%</p>
+                    </span>
+
+                    <h3 class="product-name">Lolito</h3>
+                    <p class="product-desc">Luxury big sofa</p>
+                    <h4 class="product-price">Rp 7.000.000</h4>
+                    <p class="product-old-price"><del></del></p>
+                </div>
+
+                <div class="product-container" id="respira">
+                    <div class="hidden-info">
+                        <button id="add-to-cart-button">
+                            Add to cart
+                        </button>
+                        <p class="action-share">
+                            <span class="material-symbols-outlined icon-filled"><img src="share.png" alt=""></span>
+                            Share 
+                        </p>
+                        <p class="action-compare">
+                            <span class="material-symbols-outlined"><img src="compare.png" alt=""></span>
+                            Compare
+                        </p>
+                        <div class="action-like">
+                            <span class="material-symbols-outlined"></span>
+                            Like
+                            <div class="heart"></div>
+                            <div class="animation-heart"></div>
+                            <script src="main.js"></script>
+                            <link rel="stylesheet" href="style.css">
+                        </div>
+                    </div>
+
+                    <img class="product-image" src="respira.png" alt="respira">
+                    <span class="sale" id="New">
+                        <p>New</p>
+                    </span>
+
+                    <h3 class="product-name">Respira</h3>
+                    <p class="product-desc">Outdoor bar table and stool</p>
+                    <h4 class="product-price">Rp 500.000</h4>
+                    <p class="product-old-price"><del></del></p>
+                </div>
+
+                <div class="product-container" id="syltherine">
+                    <div class="hidden-info">
+                        <button id="add-to-cart-button">
+                            Add to cart
+                        </button>
+                        <p class="action-share">
+                            <span class="material-symbols-outlined icon-filled"><img src="share.png" alt=""></span>
+                               Share 
+                        </p>
+                        <p class="action-compare">
+                            <span class="material-symbols-outlined"><img src="compare.png" alt=""></span>
+                            Compare
+                        </p>
+                        <div class="action-like">
+                            <span class="material-symbols-outlined"></span>
+                            Like
+                            <div class="heart"></div>
+                            <div class="animation-heart"></div>
+                            <script src="main.js"></script>
+                            <link rel="stylesheet" href="style.css">
+                        </div>
+                    </div>
+                    
+                    <img class="product-image" src="syltherine.png" alt="syltherine">
+                    <span class="sale" id="discount">
+                        <p>-30%</p>
+                    </span>
+
+                        <h3 class="product-name">syltherine</h3>
+                        <p class="product-desc">Stylish cafe chair</p>
+                        <h4 class="product-price">Rp 2.500.000</h4>
+                        <p class="product-old-price"><del>Rp 3.500.000</del></p>
+                </div>
+                
+                <div class="product-container" id="leviosa">
+                    <div class="hidden-info">
+                        <button id="add-to-cart-button">
+                            Add to cart
+                        </button>
+                        <p class="action-share">
+                            <span class="material-symbols-outlined icon-filled"><img src="share.png" alt=""></span>
+                                Share 
+                        </p>
+                        <p class="action-compare">
+                            <span class="material-symbols-outlined"><img src="compare.png" alt=""></span>
+                            Compare
+                        </p>
+                        <div class="action-like">
+                            <span class="material-symbols-outlined"></span>
+                            Like
+                            <div class="heart"></div>
+                            <div class="animation-heart"></div>
+                            <script src="main.js"></script>
+                            <link rel="stylesheet" href="style.css">
+                        </div>
+                    </div>
+
+                    <img class="product-image" src="leviosa.png" alt="leviosa">
+                    <span class="sale">
+                        <p></p>
+                    </span>
+
+                    <h3 class="product-name">Leviosa</h3>
+                    <p class="product-desc">Stylish cafe chair</p>
+                    <h4 class="product-price">Rp 2.500.000</h4>
+                    <p class="product-old-price"><del></del></p>
+                </div>
+
+                <div class="product-container" id="lolito">
+                    <div class="hidden-info">
+                        <button id="add-to-cart-button">
+                            Add to cart
+                        </button>
+                        <p class="action-share">
+                            <span class="material-symbols-outlined icon-filled"><img src="share.png" alt=""></span>
+                            Share 
+                        </p>
+                        <p class="action-compare">
+                            <span class="material-symbols-outlined"><img src="compare.png" alt=""></span>
+                            Compare
+                        </p>
+                        <div class="action-like">
+                            <span class="material-symbols-outlined"></span>
+                            Like
+                            <div class="heart"></div>
+                            <div class="animation-heart"></div>
+                            <script src="main.js"></script>
+                            <link rel="stylesheet" href="style.css">
+                        </div>
+                    </div>
+
+                    <img class="product-image" src="lolito.png" alt="lolito">
+                    <span class="sale" id="discount">
+                        <p>-50%</p>
+                    </span>
+
+                    <h3 class="product-name">Lolito</h3>
+                    <p class="product-desc">Luxury big sofa</p>
+                    <h4 class="product-price">Rp 7.000.000</h4>
+                    <p class="product-old-price"><del></del></p>
+                </div>
+
+                <div class="product-container" id="respira">
+                    <div class="hidden-info">
+                        <button id="add-to-cart-button">
+                            Add to cart
+                        </button>
+                        <p class="action-share">
+                            <span class="material-symbols-outlined icon-filled"><img src="share.png" alt=""></span>
+                            Share 
+                        </p>
+                        <p class="action-compare">
+                            <span class="material-symbols-outlined"><img src="compare.png" alt=""></span>
+                            Compare
+                        </p>
+                        <div class="action-like">
+                            <span class="material-symbols-outlined"></span>
+                            Like
+                            <div class="heart"></div>
+                            <div class="animation-heart"></div>
+                            <script src="main.js"></script>
+                            <link rel="stylesheet" href="style.css">
+                        </div>
+                    </div>
+
+                    <img class="product-image" src="respira.png" alt="respira">
+                    <span class="sale" id="New">
+                        <p>New</p>
+                    </span>
+
+                    <h3 class="product-name">Respira</h3>
+                    <p class="product-desc">Outdoor bar table and stool</p>
+                    <h4 class="product-price">Rp 500.000</h4>
+                    <p class="product-old-price"><del></del></p>
+                </div>
+                <div class="product-container" id="syltherine">
+                    <div class="hidden-info">
+                        <button id="add-to-cart-button">
+                            Add to cart
+                        </button>
+                        <p class="action-share">
+                            <span class="material-symbols-outlined icon-filled"><img src="share.png" alt=""></span>
+                               Share 
+                        </p>
+                        <p class="action-compare">
+                            <span class="material-symbols-outlined"><img src="compare.png" alt=""></span>
+                            Compare
+                        </p>
+                        <div class="action-like">
+                            <span class="material-symbols-outlined"></span>
+                            Like
+                            <div class="heart"></div>
+                            <div class="animation-heart"></div>
+                            <script src="main.js"></script>
+                            <link rel="stylesheet" href="style.css">
+                        </div>
+                    </div>
+                    
+                    <img class="product-image" src="syltherine.png" alt="syltherine">
+                    <span class="sale" id="discount">
+                        <p>-30%</p>
+                    </span>
+
+                        <h3 class="product-name">syltherine</h3>
+                        <p class="product-desc">Stylish cafe chair</p>
+                        <h4 class="product-price">Rp 2.500.000</h4>
+                        <p class="product-old-price"><del>Rp 3.500.000</del></p>
+                </div>
+                
+                <div class="product-container" id="leviosa">
+                    <div class="hidden-info">
+                        <button id="add-to-cart-button">
+                            Add to cart
+                        </button>
+                        <p class="action-share">
+                            <span class="material-symbols-outlined icon-filled"><img src="share.png" alt=""></span>
+                                Share 
+                        </p>
+                        <p class="action-compare">
+                            <span class="material-symbols-outlined"><img src="compare.png" alt=""></span>
+                            Compare
+                        </p>
+                        <div class="action-like">
+                            <span class="material-symbols-outlined"></span>
+                            Like
+                            <div class="heart"></div>
+                            <div class="animation-heart"></div>
+                            <script src="main.js"></script>
+                            <link rel="stylesheet" href="style.css">
+                        </div>
+                    </div>
+
+                    <img class="product-image" src="leviosa.png" alt="leviosa">
+                    <span class="sale">
+                        <p></p>
+                    </span>
+
+                    <h3 class="product-name">Leviosa</h3>
+                    <p class="product-desc">Stylish cafe chair</p>
+                    <h4 class="product-price">Rp 2.500.000</h4>
+                    <p class="product-old-price"><del></del></p>
+                </div>
+
+                <div class="product-container" id="lolito">
+                    <div class="hidden-info">
+                        <button id="add-to-cart-button">
+                            Add to cart
+                        </button>
+                        <p class="action-share">
+                            <span class="material-symbols-outlined icon-filled"><img src="share.png" alt=""></span>
+                            Share 
+                        </p>
+                        <p class="action-compare">
+                            <span class="material-symbols-outlined"><img src="compare.png" alt=""></span>
+                            Compare
+                        </p>
+                        <div class="action-like">
+                            <span class="material-symbols-outlined"></span>
+                            Like
+                            <div class="heart"></div>
+                            <div class="animation-heart"></div>
+                            <script src="main.js"></script>
+                            <link rel="stylesheet" href="style.css">
+                        </div>
+                    </div>
+
+                    <img class="product-image" src="lolito.png" alt="lolito">
+                    <span class="sale" id="discount">
+                        <p>-50%</p>
+                    </span>
+
+                    <h3 class="product-name">Lolito</h3>
+                    <p class="product-desc">Luxury big sofa</p>
+                    <h4 class="product-price">Rp 7.000.000</h4>
+                    <p class="product-old-price"><del></del></p>
+                </div>
+
+                <div class="product-container" id="respira">
+                    <div class="hidden-info">
+                        <button id="add-to-cart-button">
+                            Add to cart
+                        </button>
+                        <p class="action-share">
+                            <span class="material-symbols-outlined icon-filled"><img src="share.png" alt=""></span>
+                            Share 
+                        </p>
+                        <p class="action-compare">
+                            <span class="material-symbols-outlined"><img src="compare.png" alt=""></span>
+                            Compare
+                        </p>
+                        <div class="action-like">
+                            <span class="material-symbols-outlined"></span>
+                            Like
+                            <div class="heart"></div>
+                            <div class="animation-heart"></div>
+                            <script src="main.js"></script>
+                            <link rel="stylesheet" href="style.css">
+                        </div>
+                    </div>
+
+                    <img class="product-image" src="respira.png" alt="respira">
+                    <span class="sale" id="New">
+                        <p>New</p>
+                    </span>
+
+                    <h3 class="product-name">Respira</h3>
+                    <p class="product-desc">Outdoor bar table and stool</p>
+                    <h4 class="product-price">Rp 500.000</h4>
+                    <p class="product-old-price"><del></del></p>
+                </div>
+
+                <div class="product-container" id="syltherine">
+                    <div class="hidden-info">
+                        <button id="add-to-cart-button">
+                            Add to cart
+                        </button>
+                        <p class="action-share">
+                            <span class="material-symbols-outlined icon-filled"><img src="share.png" alt=""></span>
+                               Share 
+                        </p>
+                        <p class="action-compare">
+                            <span class="material-symbols-outlined"><img src="compare.png" alt=""></span>
+                            Compare
+                        </p>
+                        <div class="action-like">
+                            <span class="material-symbols-outlined"></span>
+                            Like
+                            <div class="heart"></div>
+                            <div class="animation-heart"></div>
+                            <script src="main.js"></script>
+                            <link rel="stylesheet" href="style.css">
+                        </div>
+                    </div>
+                    
+                    <img class="product-image" src="syltherine.png" alt="syltherine">
+                    <span class="sale" id="discount">
+                        <p>-30%</p>
+                    </span>
+
+                        <h3 class="product-name">syltherine</h3>
+                        <p class="product-desc">Stylish cafe chair</p>
+                        <h4 class="product-price">Rp 2.500.000</h4>
+                        <p class="product-old-price"><del>Rp 3.500.000</del></p>
+                </div>
+                
+                <div class="product-container" id="leviosa">
+                    <div class="hidden-info">
+                        <button id="add-to-cart-button">
+                            Add to cart
+                        </button>
+                        <p class="action-share">
+                            <span class="material-symbols-outlined icon-filled"><img src="share.png" alt=""></span>
+                                Share 
+                        </p>
+                        <p class="action-compare">
+                            <span class="material-symbols-outlined"><img src="compare.png" alt=""></span>
+                            Compare
+                        </p>
+                        <div class="action-like">
+                            <span class="material-symbols-outlined"></span>
+                            Like
+                            <div class="heart"></div>
+                            <div class="animation-heart"></div>
+                            <script src="main.js"></script>
+                            <link rel="stylesheet" href="style.css">
+                        </div>
+                    </div>
+
+                    <img class="product-image" src="leviosa.png" alt="leviosa">
+                    <span class="sale">
+                        <p></p>
+                    </span>
+
+                    <h3 class="product-name">Leviosa</h3>
+                    <p class="product-desc">Stylish cafe chair</p>
+                    <h4 class="product-price">Rp 2.500.000</h4>
+                    <p class="product-old-price"><del></del></p>
+                </div>
+
+                <div class="product-container" id="lolito">
+                    <div class="hidden-info">
+                        <button id="add-to-cart-button">
+                            Add to cart
+                        </button>
+                        <p class="action-share">
+                            <span class="material-symbols-outlined icon-filled"><img src="share.png" alt=""></span>
+                            Share 
+                        </p>
+                        <p class="action-compare">
+                            <span class="material-symbols-outlined"><img src="compare.png" alt=""></span>
+                            Compare
+                        </p>
+                        <div class="action-like">
+                            <span class="material-symbols-outlined"></span>
+                            Like
+                            <div class="heart"></div>
+                            <div class="animation-heart"></div>
+                            <script src="main.js"></script>
+                            <link rel="stylesheet" href="style.css">
+                        </div>
+                    </div>
+
+                    <img class="product-image" src="lolito.png" alt="lolito">
+                    <span class="sale" id="discount">
+                        <p>-50%</p>
+                    </span>
+
+                    <h3 class="product-name">Lolito</h3>
+                    <p class="product-desc">Luxury big sofa</p>
+                    <h4 class="product-price">Rp 7.000.000</h4>
+                    <p class="product-old-price"><del></del></p>
+                </div>
+
+                <div class="product-container" id="respira">
+                    <div class="hidden-info">
+                        <button id="add-to-cart-button">
+                            Add to cart
+                        </button>
+                        <p class="action-share">
+                            <span class="material-symbols-outlined icon-filled"><img src="share.png" alt=""></span>
+                            Share 
+                        </p>
+                        <p class="action-compare">
+                            <span class="material-symbols-outlined"><img src="compare.png" alt=""></span>
+                            Compare
+                        </p>
+                        <div class="action-like">
+                            <span class="material-symbols-outlined"></span>
+                            Like
+                            <div class="heart"></div>
+                            <div class="animation-heart"></div>
+                            <script src="main.js"></script>
+                            <link rel="stylesheet" href="style.css">
+                        </div>
+                    </div>
+
+                    <img class="product-image" src="respira.png" alt="respira">
+                    <span class="sale" id="New">
+                        <p>New</p>
+                    </span>
+
+                    <h3 class="product-name">Respira</h3>
+                    <p class="product-desc">Outdoor bar table and stool</p>
+                    <h4 class="product-price">Rp 500.000</h4>
+                    <p class="product-old-price"><del></del></p>
+                </div>
+            </div>
+            <div id="pagination">
+                <ul class="pagination">
+                <li>
+                  <button class="pagination__button pagination__button--active" type="button">
+                    1
+                  </button>
+                </li>
+                <li>
+                  <button class="pagination__button" type="button">2</button>
+                </li>
+                <li>
+                  <button class="pagination__button" type="button">3</button>
+                </li>
+                <li>
+                  <button class="pagination__button pagination__button--next" type="button">
+                    Next
+                  </button>
+                </li>
+              </ul>
+            </div>
+        </section>
+
+        <section class="feature">
+            <div class="feature-container">
+                <img class="feature-logo" src="Trophy.png" alt="trophy">
+
+                <h3 class="feature-heading">High Quality</h3>
+                <p class="feature-description">crafted from top materials</p>
+            </div>
+
+            <div class="feature-container">
+                <img class="feature-logo" src="warranty.png" alt="warranty">
+
+                <h3 class="feature-heading">Warranty Protection</h3>
+                <p class="feature-description">Over 2 years</p>
+            </div>
+
+            <div class="feature-container">
+                <img class="feature-logo" src="shipping.png" alt="shipping">
+
+                <h3 class="feature-heading">Free Shipping</h3>
+                <p class="feature-description">Order over 150 $</p>
+            </div>
+
+            <div class="feature-container">
+                <img class="feature-logo" src="customer-support.png" alt="support">
+
+                <h3 class="feature-heading">24 / 7 Support</h3>
+                <p class="feature-description">Dedicated support</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+        <hr>
+
+        <h3 id="footer-heading-1">Furniro</h3>
+
+        <p id="address">400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
+
+        <nav id="footer-nav">
+            <div class="footer-nav-container" id="footer-link-nav">
+                <p class="footer-nav-heading">Links</p>
+                <ul class="footer-nav-list">
+                    <li><a class="footer-nav-link" href="index.html">Home</a></li>
+                    <li><a class="footer-nav-link" href="Shop.html">Shop</a></li>
+                    <li><a class="footer-nav-link" href="blog.html">About</a></li>
+                    <li><a class="footer-nav-link" href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-nav-container" id="footer-help-nav">
+                <p class="footer-nav-heading">Helps</p>
+                <ul class="footer-nav-list">
+                    <li><a class="footer-nav-link" href="Payment-Options.html">Payment Options</a></li>
+                    <li><a class="footer-nav-link" href="Returns.html">Returns</a></li>
+                    <li><a class="footer-nav-link" href="Privacy-Policies.html">Privacy Policies</a></li>
+                </ul>
+            </div>
+            
+            <Form class="footer-nav-container" action="" method="get">
+                <p class="footer-nav-heading">Newsletters</p>
+                <input type="text" placeholder="Enter Your Email Address">
+                <button id="subscribe-button">SUBSCRIBE</button>    
+            </Form>
+            
+        </nav>
+
+        <hr>
+
+        <p id="Copy-Rights">2024 furniro. All rights reserved</p>
+    </footer>
+</body>
+</html>
